@@ -1,0 +1,119 @@
+.container {
+  width: 90px;
+  height: 85px;
+  background-color: rgb(24, 24, 24);
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 5px 0 0 5px;
+  cursor: pointer;
+  margin: 1px;
+  z-index: 5;
+
+  &__inner {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(
+      90deg,
+      rgb(78, 78, 78) 0%,
+      rgba(57, 57, 57, 1) 27%,
+      rgb(43, 42, 42) 100%
+    );
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 3px 1px rgb(36, 36, 36);
+  }
+
+  &__name {
+    color: #fff;
+    padding: 5px 0 0 5px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+.container.on {
+  box-shadow: inset 4px 4px 3px 1px rgb(78, 78, 78),
+    0.1px 0.1px 5px 0.5px rgb(155, 154, 154);
+}
+
+.container.off {
+  box-shadow: inset 4px 4px 3px 1px rgb(78, 78, 78);
+}
+
+.lightOn {
+  width: 50px;
+  padding: 12px 0 0px 12px;
+}
+
+.winKey {
+  padding: 15px 0 0 18px;
+}
+
+.upArrow {
+  padding: 10px;
+  rotate: 180deg;
+}
+
+.leftArrow {
+  padding: 10px;
+  rotate: 90deg;
+}
+
+.downArrow {
+  padding: 10px;
+}
+
+.rightArrow {
+  padding: 10px;
+  rotate: 270deg;
+}
+
+.container:hover {
+  animation: backgroundLightHover 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(-1px);
+  z-index: 1;
+}
+
+.toggle-light {
+  animation: backgroundLightHover 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(-1px);
+  z-index: 1;
+}
+
+@keyframes backgroundLightHover {
+  0% {
+    box-shadow: inset 4px 4px 3px 1px rgb(78, 78, 78), 1px 1px 20px 6px red;
+  }
+  25% {
+    box-shadow: inset 4px 4px 3px 1px rgb(59, 59, 59), 1px 1px 32px 6px red;
+  }
+  50% {
+    box-shadow: inset 4px 4px 3px 1px rgb(78, 78, 78), 1px 1px 20px 6px red;
+  }
+  75% {
+    box-shadow: inset 4px 4px 3px 1px rgb(59, 59, 59), 1px 1px 32px 6px red;
+  }
+  100% {
+    box-shadow: inset 4px 4px 3px 1px rgb(78, 78, 78), 1px 1px 20px 6px red;
+  }
+}
+
+@media (max-width: 1080px) {
+  .container {
+    width: 55px;
+    height: 50px;
+
+    &__inner {
+      width: 35px;
+      height: 35px;
+    }
+
+    &__name {
+      font-size: 0.6rem;
+    }
+
+    &__img {
+      width: 20px;
+      //   padding: 12px 0 0px 12px;
+    }
+  }
+}

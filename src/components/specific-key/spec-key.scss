@@ -1,0 +1,231 @@
+// Enter
+.enterKey {
+  width: 90px;
+  height: 175px;
+  background-color: rgb(24, 24, 24);
+  box-shadow: inset 4px 4px 3px 1px rgb(78, 78, 78);
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 5px 0 0 5px;
+  cursor: pointer;
+  margin: 1px;
+  grid-row: span 2;
+  z-index: 5;
+  //   grid-column: span 2;
+}
+
+.enterInnerKey {
+  padding: 5px 0 0 2px;
+  width: 75px;
+  height: 160px;
+  background: linear-gradient(
+    90deg,
+    rgb(78, 78, 78) 0%,
+    rgba(57, 57, 57, 1) 27%,
+    rgb(43, 42, 42) 100%
+  );
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-shadow: inset 1px 1px 3px 1px rgb(36, 36, 36);
+}
+
+// Back
+.backKey {
+  width: 185px;
+  height: 85px;
+  background-color: rgb(24, 24, 24);
+  box-shadow: inset 4px 4px 3px 1px rgb(78, 78, 78);
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 5px 0 0 5px;
+  cursor: pointer;
+  margin: 1px;
+  z-index: 5;
+
+  grid-column: span 2;
+}
+
+.backInnerKey {
+  padding: 5px 0 0 2px;
+  width: 170px;
+  height: 70px;
+  background: linear-gradient(
+    90deg,
+    rgb(78, 78, 78) 0%,
+    rgba(57, 57, 57, 1) 27%,
+    rgb(43, 42, 42) 100%
+  );
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-shadow: inset 1px 1px 3px 1px rgb(36, 36, 36);
+}
+
+.backArrow {
+  padding: 10px;
+  rotate: 180deg;
+}
+
+// Tab
+.tabKey {
+  width: 170px;
+  height: 85px;
+  background-color: rgb(24, 24, 24);
+  box-shadow: inset 4px 4px 3px 1px rgb(78, 78, 78);
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 5px 0 0 5px;
+  cursor: pointer;
+  margin: 1px;
+  z-index: 5;
+
+  grid-column: span 2;
+}
+
+.tabInnerKey {
+  padding: 5px 0 0 2px;
+  width: 150px;
+  height: 70px;
+  background: linear-gradient(
+    90deg,
+    rgb(78, 78, 78) 0%,
+    rgba(57, 57, 57, 1) 27%,
+    rgb(43, 42, 42) 100%
+  );
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-shadow: inset 1px 1px 3px 1px rgb(36, 36, 36);
+}
+
+// Caps
+.capsKey {
+  width: 185px;
+  height: 85px;
+  background-color: rgb(24, 24, 24);
+  box-shadow: inset 4px 4px 3px 1px rgb(78, 78, 78);
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 5px 0 0 5px;
+  cursor: pointer;
+  margin: 1px;
+  z-index: 5;
+
+  grid-column: span 2;
+}
+
+.capsInnerKey {
+  padding: 5px 0 0 2px;
+  width: 170px;
+  height: 70px;
+  background: linear-gradient(
+    90deg,
+    rgb(78, 78, 78) 0%,
+    rgba(57, 57, 57, 1) 27%,
+    rgb(43, 42, 42) 100%
+  );
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-shadow: inset 1px 1px 3px 1px rgb(36, 36, 36);
+}
+
+// Shift
+.shiftKey {
+  width: 185px;
+  height: 85px;
+  background-color: rgb(24, 24, 24);
+  box-shadow: inset 4px 4px 3px 1px rgb(78, 78, 78);
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 5px 0 0 5px;
+  cursor: pointer;
+  margin: 1px;
+  z-index: 5;
+
+  grid-column: span 2;
+}
+
+.shiftInnerKey {
+  padding: 5px 0 0 2px;
+  width: 170px;
+  height: 70px;
+  background: linear-gradient(
+    90deg,
+    rgb(78, 78, 78) 0%,
+    rgba(57, 57, 57, 1) 27%,
+    rgb(43, 42, 42) 100%
+  );
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-shadow: inset 1px 1px 3px 1px rgb(36, 36, 36);
+}
+
+// Space
+.spaceKey {
+  width: auto;
+  height: 85px;
+  background-color: rgb(24, 24, 24);
+  box-shadow: inset 4px 4px 3px 1px rgb(78, 78, 78);
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 5px 0 0 5px;
+  cursor: pointer;
+  margin: 1px;
+  text-align: center;
+  z-index: 5;
+
+  grid-column: span 7;
+}
+
+.spaceInnerKey {
+  padding: 5px 0 0 2px;
+  width: 640px;
+  height: 70px;
+  background: linear-gradient(
+    90deg,
+    rgb(78, 78, 78) 0%,
+    rgba(57, 57, 57, 1) 27%,
+    rgb(43, 42, 42) 100%
+  );
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-shadow: inset 1px 1px 3px 1px rgb(36, 36, 36);
+}
+
+.spaceKey.on,
+.shiftKey.on,
+.capsKey.on,
+.enterKey.on,
+.tabKey.on,
+.backKey.on {
+  box-shadow: inset 4px 4px 3px 1px rgb(78, 78, 78),
+    0.1px 0.1px 5px 0.5px rgb(155, 154, 154);
+}
+
+// Animation
+.enterKey:hover,
+.backKey:hover,
+.tabKey:hover,
+.shiftKey:hover,
+.spaceKey:hover,
+.capsKey:hover {
+  animation: backgroundLightHover 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(-1px);
+  z-index: 1;
+}
+
+@keyframes backgroundLightHover {
+  0% {
+    box-shadow: inset 4px 4px 3px 1px rgb(78, 78, 78), 1px 1px 20px 6px red;
+  }
+  25% {
+    box-shadow: inset 4px 4px 3px 1px rgb(59, 59, 59), 1px 1px 32px 6px red;
+  }
+  50% {
+    box-shadow: inset 4px 4px 3px 1px rgb(78, 78, 78), 1px 1px 20px 6px red;
+  }
+  75% {
+    box-shadow: inset 4px 4px 3px 1px rgb(59, 59, 59), 1px 1px 32px 6px red;
+  }
+  100% {
+    box-shadow: inset 4px 4px 3px 1px rgb(78, 78, 78), 1px 1px 20px 6px red;
+  }
+}

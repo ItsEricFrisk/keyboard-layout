@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100vh;
+  background: rgb(125, 124, 124);
+  background: linear-gradient(
+    146deg,
+    rgb(83, 83, 83) 0%,
+    rgb(70, 69, 69) 32%,
+    rgb(53, 53, 53) 100%
+  );
+}
+
+.keyboard-layout-outside {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: auto;
+  height: auto;
+  border: 10px solid rgb(39, 39, 39);
+  border-radius: 8px;
+  box-shadow: 20px 10px 10px 10px rgb(48, 48, 48),
+    inset 300px 10px 100px 100px rgb(39, 39, 39);
+
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 3px;
+  height: auto;
+  border: 10px solid rgb(75, 75, 75);
+  border-radius: 8px;
+  background-color: rgb(88, 88, 88);
+  padding: 4px;
+  z-index: 1;
+}
+
+@media (max-width: 1080px) {
+  #root {
+    justify-content: flex-start;
+  }
+
+  .keyboard {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(6, 55px);
+    gap: 1px;
+    height: 30vh;
+    // width: 500px;
+  }
+}
+
+.onButton {
+  width: 20px;
+  height: 15px;
+  background-color: rgb(252, 164, 1);
+  border-radius: 2px;
+  position: absolute;
+  top: 175px;
+  left: 235px;
+  border: 1px solid rgb(241, 206, 3);
+  cursor: pointer;
+}
+
+.onButton.on {
+  box-shadow: 1px 1px 30px 10px green;
+  transform: translateY(1px);
+}
+
+.onButton.off {
+  box-shadow: 0px 0px 0px 0px;
+}
+
+.clickText {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transform: translate(-10%, -10%);
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.textfield {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+  font-size: 5rem;
+  font-family: cursive;
+  font-weight: bold;
+  color: #c95959;
+  text-shadow: 4px 3px 10px #0c0c0c;
+}
